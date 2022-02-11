@@ -18,15 +18,20 @@ const handleUserInput = function (key) {
     process.exit();
   }
 
-  const mvmntKeys = {
+  const mappedKeys = {
     w: "Move: up",
     a: "Move: left",
     s: "Move: down",
-    d: "Move: right"
+    d: "Move: right",
+    h: "Say: HI!",
+    g: "Say: GG!",
+    b: "Say: Bye",
+    f: "Say: FAIL",
+    u: "Say: You suck"
   }
 
-  if (mvmntKeys[key]) {
-    connection.write(mvmntKeys[key]);
+  if (mappedKeys[key]) {
+    connection.write(mappedKeys[key]);
   }
 };
 
