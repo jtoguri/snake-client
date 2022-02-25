@@ -8,8 +8,8 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["Example of succsessful game connection."](./screenshots/"Screen Shot 2022-02-25 at 11.20.46 AM.png")
-!["Example game in play."](./screenshots/"Screen Shot 2022-02-25 at 11.25.32 AM.png")
+!["Example of succsessful game connection."](/screenshots/"Screen Shot 2022-02-25 at 11.20.46 AM.png")
+!["Example game in play."](/screenshots/"Screen Shot 2022-02-25 at 11.25.32 AM.png")
 
 
 ## Getting Started
