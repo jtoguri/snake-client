@@ -1,3 +1,5 @@
+const { mappedKeys, exitKey } = require("./constants")
+
 // Stores the active TCP connection object.
 let connection;
 
@@ -13,21 +15,10 @@ const setupInput = function (conn) {
   return stdin;
 };
 
+// compares the key value to all mapped keys
 const handleUserInput = function (key) {
-  if (key === '\u0003') {
+  if (key === exitKey) {
     process.exit();
-  }
-
-  const mappedKeys = {
-    w: "Move: up",
-    a: "Move: left",
-    s: "Move: down",
-    d: "Move: right",
-    h: "Say: HI!",
-    g: "Say: GG!",
-    b: "Say: Bye",
-    f: "Say: FAIL",
-    u: "Say: You suck"
   }
 
   if (mappedKeys[key]) {
